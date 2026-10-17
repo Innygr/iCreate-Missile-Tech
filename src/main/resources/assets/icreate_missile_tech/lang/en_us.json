@@ -1,0 +1,10 @@
+{
+  "itemGroup.icreate_missile_tech": "iCreate: Missile Tech",
+  "item.icreate_missile_tech.missile_fin": "Missile Fin",
+  "item.icreate_missile_tech.missile_thruster": "Missile Thruster",
+  "item.icreate_missile_tech.missile_fluid_tank": "Missile Fluid Tank",
+  "item.icreate_missile_tech.missile_navigator": "Missile Navigator",
+  "item.icreate_missile_tech.missile_nose_cone": "Missile Nose Cone",
+  "item.icreate_missile_tech.missile_warhead": "Missile Warhead",
+  "item.icreate_missile_tech.missile_remote": "Missile Remote"
+}
