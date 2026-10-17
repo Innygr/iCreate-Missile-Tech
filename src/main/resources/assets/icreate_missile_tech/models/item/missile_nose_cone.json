@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "icreate_missile_tech:item/missile_nose_cone"
+  }
+}
