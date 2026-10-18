@@ -17,3 +17,9 @@ GitHub Actions builds on pushes and pull requests. Use Gradle 8.12 with Java 21 
 
 ## License
 See [LICENSE](LICENSE).
+
+
+## Included in alpha.1
+- Seven registered missile component items with provisional crafting recipes.
+- Placeholder icons reuse vanilla item textures until custom art is integrated.
+- Recipes are provisional and may change as missile assembly, fuel, and launch mechanics are implemented.
