@@ -22,8 +22,17 @@ An experimental Create addon for Minecraft 1.21.1 on NeoForge.
 
 This is a development alpha, not a finished missile system. Back up worlds before testing and do not assume planned features are available.
 
+## Alpha verification checklist
+- [ ] Start a client with the matching Minecraft, NeoForge, and Create versions.
+- [ ] Confirm the iCreate: Missile Tech creative tab appears and all seven items have names, icons, and tooltips.
+- [ ] Craft each recipe in survival and confirm output counts.
+- [ ] Start a dedicated server with the same mod set and confirm startup completes.
+- [ ] Check latest.log for missing model, texture, or translation warnings.
+
+Do not submit a public Modrinth file until the client and dedicated-server checks are completed. GitHub Actions uploads the built JAR as a short-lived workflow artifact.
+
 ## Build
-With Java 21 and Gradle 8.12, run `gradle --no-daemon build`. GitHub Actions uploads the built JAR as a short-lived workflow artifact. Test the artifact in both a client and a dedicated server before considering a Modrinth release.
+With Java 21 and Gradle 8.12, run `gradle --no-daemon build`.
 
 ## License
 MIT. See [LICENSE](LICENSE).
