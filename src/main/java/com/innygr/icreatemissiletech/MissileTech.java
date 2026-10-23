@@ -1,10 +1,13 @@
 package com.innygr.icreatemissiletech;
 
+import java.util.List;
+import net.minecraft.ChatFormatting;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.TooltipFlag;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.fml.common.Mod;
 import net.neoforged.neoforge.registries.DeferredHolder;
@@ -27,7 +30,7 @@ public final class MissileTech {
     public static final DeferredHolder<Item, Item> MISSILE_REMOTE = item("missile_remote");
 
     private static DeferredHolder<Item, Item> item(String name) {
-        return ITEMS.registerSimpleItem(name);
+        return ITEMS.register(name, () -> new DescribedItem(name));
     }
 
     static {
@@ -48,5 +51,23 @@ public final class MissileTech {
     public MissileTech(IEventBus modBus) {
         ITEMS.register(modBus);
         TABS.register(modBus);
+    }
+
+    private static final class DescribedItem extends Item {
+        private final String descriptionKey;
+
+        private DescribedItem(String path) {
+            super(new Item.Properties());
+            this.descriptionKey = "tooltip." + MOD_ID + "." + path;
+        }
+
+        @Override
+        public void appendHoverText(ItemStack stack, Item.TooltipContext context,
+                                    List<Component> tooltip, TooltipFlag flag) {
+            super.appendHoverText(stack, context, tooltip, flag);
+            tooltip.add(Component.translatable(descriptionKey).withStyle(ChatFormatting.GRAY));
+            tooltip.add(Component.translatable("tooltip." + MOD_ID + ".alpha_notice")
+                    .withStyle(ChatFormatting.DARK_GRAY, ChatFormatting.ITALIC));
+        }
     }
 }

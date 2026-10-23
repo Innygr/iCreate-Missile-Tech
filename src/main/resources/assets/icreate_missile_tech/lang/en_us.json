@@ -6,5 +6,13 @@
   "item.icreate_missile_tech.missile_navigator": "Missile Navigator",
   "item.icreate_missile_tech.missile_nose_cone": "Missile Nose Cone",
   "item.icreate_missile_tech.missile_warhead": "Missile Warhead",
-  "item.icreate_missile_tech.missile_remote": "Missile Remote"
+  "item.icreate_missile_tech.missile_remote": "Missile Remote",
+  "tooltip.icreate_missile_tech.missile_fin": "Stabilizes a future assembled missile.",
+  "tooltip.icreate_missile_tech.missile_thruster": "Propulsion component for the planned missile assembly system.",
+  "tooltip.icreate_missile_tech.missile_fluid_tank": "Reserved for the planned fluid-fuel system.",
+  "tooltip.icreate_missile_tech.missile_navigator": "Guidance component; navigation behavior is not implemented yet.",
+  "tooltip.icreate_missile_tech.missile_nose_cone": "Front section for a future missile assembly.",
+  "tooltip.icreate_missile_tech.missile_warhead": "Payload component; payload behavior is not implemented yet.",
+  "tooltip.icreate_missile_tech.missile_remote": "Reserved for future remote-control functionality.",
+  "tooltip.icreate_missile_tech.alpha_notice": "Early alpha — some components are placeholders."
 }

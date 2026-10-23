@@ -5,7 +5,7 @@ An experimental Create addon for Minecraft 1.21.1 on NeoForge.
 ## Alpha.1 contents
 - Seven registered components: Missile Fin, Missile Thruster, Missile Fluid Tank, Missile Navigator, Missile Nose Cone, Missile Warhead, and Missile Remote.
 - Provisional crafting recipes, including three diagonal iron ingots crafting four fins and an iron ingot above an iron block crafting the nose cone.
-- Distinct vanilla placeholder icons so each component is visible before custom textures are integrated.
+- Distinct vanilla placeholder icons and in-game tooltips that explain each component's intended role and identify unfinished behavior.
 - GitHub Actions build with a downloadable development JAR artifact.
 
 ## Not implemented yet
